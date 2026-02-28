@@ -5,6 +5,27 @@ html *{
     background-color: rgb(238, 238, 240);
 }
 
+.nav_wrap{
+    margin: auto;
+    width: 90%;
+    padding: 12px;
+}
+
+.nav_menu{
+    width: 40%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_item{
+    font-size: 23px;
+    font-weight: 600;
+    padding-right: 32px;
+}
+
 
 #main {
     display: flex;
@@ -17,7 +38,7 @@ html *{
 .sidebar_sticky{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     max-width: 900px;
     padding:20px;
 }
@@ -39,12 +60,12 @@ html *{
 }
 
 .name{
-    font-size: 2.4cqh;
+    font-size: 22px;
     margin-bottom: 5px;
 }
 
 .bio{
-    font-size: 1.6cqh;
+    font-size: 13px;
     margin-top: 5px;
 }
 
