@@ -9,22 +9,35 @@ html *{
     margin: auto;
     width: 90%;
     padding: 12px;
+    padding-left: 120px;
 }
 
 .nav_menu{
-    width: 40%;
+    width: 38%;
 }
 
 .links{
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 .link_item{
-    font-size: 23px;
-    font-weight: 600;
+    font-size: 20px;
     padding-right: 32px;
 }
+
+a{
+    color: rgb(104, 104, 104);
+    transition: 0.4s;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(35,33,33);
+}
+
 
 
 #main {
@@ -75,5 +88,5 @@ html *{
 }
 
 .page_inner{
-    padding-right:50px;
+    padding-right:90px;
 }
