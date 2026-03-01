@@ -9,7 +9,7 @@ html *{
     margin: auto;
     width: 90%;
     padding: 12px;
-    padding-left: 120px;
+    padding-left: 5vw;
 }
 
 .nav_menu{
@@ -20,11 +20,12 @@ html *{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    gap: 40px;
 }
 
 .link_item{
     font-size: 20px;
-    padding-right: 32px;
+    text-wrap-mode: nowrap;
 }
 
 a{
@@ -39,7 +40,6 @@ a:hover{
 }
 
 
-
 #main {
     display: flex;
     flex-direction: row;
@@ -51,7 +51,7 @@ a:hover{
 .sidebar_sticky{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    flex-basis: 70%;
     max-width: 900px;
     padding:20px;
 }
@@ -59,12 +59,12 @@ a:hover{
 .author_avatar{
     border-radius: 50%;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
 
 }
 
 .author_avatar_wrapper{
-    width: 100%;
+    flex-basis: 100%;
     margin: auto;
 }
 
@@ -89,4 +89,43 @@ a:hover{
 
 .page_inner{
     padding-right:90px;
+}
+
+.page_title{
+    margin-bottom: 35px;
+}
+
+
+/* Projects List Styling */
+.project_archive{
+    padding: 25px;
+    padding-right: 90px;
+}
+
+.project_contents{
+    display: flex;
+}
+.project_image_wrapper{
+    flex-basis: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.project_image{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.contributors{
+    color: rgb(104, 104, 104);
+}
+
+
+/* queries */
+@media(max-width: 575px){
+    #main{
+        flex-direction: column;
+    }
+    .sidebar_sticky{
+        flex-direction: row;
+    }
 }
