@@ -158,6 +158,7 @@ a:hover{
 /* other */
 .other_wrapper{
     width: 95%;
+    height: 95%;
     padding: 10px;
     margin: auto;
 }
@@ -168,42 +169,67 @@ a:hover{
     text-align: center;
 }
 
+.other_img{
+    width: 100%;
+    height: auto;
+}
+
 .other_grid{
     width: 100%;
     display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
 }
-
 .grid_item{
     padding:3px;
 }
-
 .grid_img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#gi1{
+#DogGrid{
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+#Dog1{
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
 }
-#gi2{
+#Dog2{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
 }
-#gi3{
+#Dog3{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
+#DiceGrid{
+    grid-template-rows: 100%;
+    grid-template-columns: 65% 35%;
+}
+#Dice1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#Dice2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#lego_wrapper{
+    width:50%;
+}
 
 /* footer */
 .page_footer{
