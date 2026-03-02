@@ -45,7 +45,7 @@ a:hover{
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    width: 70%;
+    width: 75%;
 }
 
 .sidebar_sticky{
@@ -72,6 +72,7 @@ a:hover{
 
 .author_content{
     padding-left: 14px;
+    resize: both;
 }
 
 .name{
@@ -139,8 +140,17 @@ a:hover{
     }
     .sidebar_sticky{
         flex-direction: row;
+        justify-content: space-evenly;
     }
     .project_contents{
         flex-direction: column;
+    }
+    .author_urls{
+        display:none;
+    }
+    .author_avatar_wrapper{
+        max-width: 20vw;
+        max-height: 20vw;
+        margin: auto;
     }
 }
